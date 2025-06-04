@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="bg">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Вино и СПА хотел Чукара</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Lora&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    <script src="assets/js/restrict_dates.js"></script>
+
+    <style>
+      .hero {
+        background-image: url("assets/images/hotel109.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 90vh;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark fixed-top"
+      style="
+        background: linear-gradient(to right, #3c423c, #2e342e);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      "
+    >
+      <div class="container">
+        <h1 id="H1NAV">Вино и СПА хотел Чукара</h1>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto fs-5">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Начало</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="hotel.html">Хотел</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="rooms.html">Стаи</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Reservations.html">Резервации</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link position-relative"
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#cartModal"
+              >
+                <i class="fa fa-shopping-cart"></i>
+                <span
+                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                  id="cart-count"
+                  >0</span
+                >
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero" data-aos="fade-in">
+      <h1>Добре дошли в Чукара</h1>
+    </section>
+
+    <section
+      class="section text-center"
+      style="background-color: #faf6f0; padding: 30px 20px"
+      data-aos="fade-up"
+    >
+      <div
+        class="container"
+        style="
+          max-width: 800px;
+          margin: auto;
+          font-family: 'Lora', serif;
+          color: #4a3c31;
+        "
+      >
+        <h2
+          style="
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 700;
+            font-size: 2.5rem;
+            margin-bottom: 25px;
+            margin-top: 50px;
+          "
+          data-aos="zoom-in"
+        >
+          Комплекс Чукара
+        </h2>
+        <p
+          style="font-size: 25px; line-height: 1.6; margin-bottom: 20px"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          Комплекс Чукара вдъхновява за почивка и релакс далече от големия град,
+          стреса и динамиката на ежедневието. Инспириран от живота в провинция
+          предлага на всички гости възможността да прекарат време сред
+          природата, на чист въздух, с най-близките си хора. Условия и за
+          най-изискания вкус – висококачествени вино, био плодове и зеленчуци,
+          лукс за вас и вашите семейства.
+        </p>
+      </div>
+    </section>
+
+    <section class="section bg-light">
+      <style>
+        .card-img {
+          height: 300px;
+          object-fit: cover;
+        }
+
+        .overlay {
+          background: rgba(0, 0, 0, 0.6);
+          opacity: 0;
+          transition: 0.4s ease-in-out;
+          text-align: center;
+        }
+
+        .card:hover .overlay {
+          opacity: 1;
+        }
+      </style>
+
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div
+              class="card position-relative overflow-hidden border-0 shadow-lg"
+            >
+              <img
+                src="assets/images/wine.jpg"
+                class="card-img"
+                alt="Винарна"
+              />
+              <div
+                class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-white"
+              >
+                <h5 class="mb-2">Винарна Чукара</h5>
+                <p class="small px-3">
+                  Открийте изкуството на винопроизводството и се насладете на
+                  винени дегустации с гледка.
+                </p>
+                <a href="winery.html" class="btn btn-outline-light mt-2"
+                  >Виж повече</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div
+              class="card position-relative overflow-hidden border-0 shadow-lg"
+            >
+              <img src="assets/images/spa2.jpeg" class="card-img" alt="СПА" />
+              <div
+                class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-white"
+              >
+                <h5 class="mb-2">СПА & Релакс</h5>
+                <p class="small px-3">
+                  Зона за пълен релакс – басейни, масажи, финландска сауна,
+                  билкови терапии и още.
+                </p>
+                <a href="SPA.html" class="btn btn-outline-light mt-2"
+                  >Виж повече</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div
+              class="card position-relative overflow-hidden border-0 shadow-lg"
+            >
+              <img
+                src="assets/images/restaurant.jpg"
+                class="card-img"
+                alt="Ресторант"
+              />
+              <div
+                class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-white"
+              >
+                <h5 class="mb-2">Ресторант</h5>
+                <p class="small px-3">
+                  Насладете се на вкусна храна с местни продукти и гледка към
+                  планината.
+                </p>
+                <a href="Restaurant.html" class="btn btn-outline-light mt-2"
+                  >Виж повече</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div
+              class="card position-relative overflow-hidden border-0 shadow-lg"
+            >
+              <img
+                src="assets/images/zoo3.jpg"
+                class="card-img"
+                alt="Зоопарк"
+              />
+              <div
+                class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-white"
+              >
+                <h5 class="mb-2">Зоопарк</h5>
+                <p class="small px-3">
+                  Разгледайте животните и зеленчуковите градини – перфектно за
+                  цялото семейство.
+                </p>
+                <a href="zoo.html" class="btn btn-outline-light mt-2"
+                  >Виж повече</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section bg-light py-5" id="reviews" data-aos="fade-up">
+      <div class="container">
+        <h2 class="text-center mb-5" data-aos="zoom-in">
+          Какво казват клиентите ни
+        </h2>
+        <div class="row justify-content-center">
+          <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="card review-card p-4 shadow-sm h-100">
+              <p class="review-text">
+                "Прекрасен хотел с невероятна атмосфера и вкусно вино.
+                Персоналът беше много любезен!"
+              </p>
+              <h5 class="review-author mt-3">– Иван Петров</h5>
+              <small class="text-muted">Бизнес пътуване</small>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="card review-card p-4 shadow-sm h-100">
+              <p class="review-text">
+                "СПА зоната беше релаксираща и уютна, препоръчвам го за семейна
+                почивка."
+              </p>
+              <h5 class="review-author mt-3">– Мария Георгиева</h5>
+              <small class="text-muted">Семейна ваканция</small>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="card review-card p-4 shadow-sm h-100">
+              <p class="review-text">
+                "Отлично обслужване и вкусна храна. Винената дегустация беше
+                страхотна изненада."
+              </p>
+              <h5 class="review-author mt-3">– Георги Иванов</h5>
+              <small class="text-muted">Романтичен уикенд</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding: 30px 0" data-aos="fade-up">
+      <div class="container text-center" style="max-width: 500px; margin: auto">
+        <h2 class="text-center mb-5" data-aos="zoom-in">
+          Намерете ни на картата
+        </h2>
+        <div style="border-radius: 12px; overflow: hidden; box-shadow: none">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2923.6116814547618!2d25.501402925683493!3d42.881039671149225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40a91d1732bf9453%3A0x6a5462de1b7e0753!2z0JLQuNC90L4g0Lgg0KHQn9CQINGF0L7RgtC10Lsg0KfRg9C60LDRgNCw!5e0!3m2!1sbg!2sbg!4v1747780145827!5m2!1sbg!2sbg"
+            width="100%"
+            height="320"
+            style="border: 0; border-radius: 12px"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      class="footer text-center"
+      style="
+        background-color: #2f2e2c;
+        color: #d3d3d3;
+        padding: 20px 15px;
+        font-family: 'Lora', serif;
+      "
+    >
+      <div class="container">
+        <p style="margin: 0 0 8px; font-size: 16px">
+          Вино и СПА хотел Чукара &nbsp;&bull;&nbsp;
+          <a
+            href="mailto:reservations@chukara.bg"
+            style="color: #d3d3d3; text-decoration: none"
+            >reservations@chukara.bg</a
+          >
+          &nbsp;&bull;&nbsp; +359 897 404 404
+        </p>
+        <p style="margin: 0 0 12px; font-size: 14px; opacity: 0.7">
+          ул. „Хан Кубрат“ 12, гр. Трявна, България
+        </p>
+        <div>
+          <a
+            href="https://facebook.com/chukara.tryavna"
+            class="fa fa-facebook social-icon"
+            aria-label="Facebook"
+          ></a>
+          <a
+            href="https://instagram.com/chukara.tryavna"
+            class="fa fa-instagram social-icon"
+            aria-label="Instagram"
+          ></a>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

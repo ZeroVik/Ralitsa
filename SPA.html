@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="bg">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>СПА и Релакс | Вино и СПА хотел Чукара</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Lora&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <style>
+      .hero {
+        background-image: url("assets/images/spa2.jpeg");
+        background-size: cover;
+        background-position: center;
+        height: 80vh;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark fixed-top"
+      style="
+        background: linear-gradient(to right, #3c423c, #2e342e);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      "
+    >
+      <div class="container">
+        <h1 id="H1NAV">Вино и СПА хотел Чукара</h1>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto fs-5">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Начало</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="hotel.html">Хотел</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="rooms.html">Стаи</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Reservations.html">Резервации</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link position-relative"
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#cartModal"
+              >
+                <i class="fa fa-shopping-cart"></i>
+                <span
+                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                  id="cart-count"
+                  >0</span
+                >
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero" data-aos="fade-in">
+      <h1>СПА и Релакс</h1>
+    </section>
+
+    <div class="container py-5">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <h2>Цялостна грижа за тялото и ума</h2>
+        <p class="lead">
+          Открийте баланса между релакс и възстановяване. Нашият СПА център
+          съчетава модерни удобства и природна хармония за незабравимо
+          изживяване.
+        </p>
+      </div>
+
+      <div
+        class="row mb-5 align-items-center"
+        data-aos="fade-up"
+        data-aos-delay="100"
+      >
+        <div class="col-md-6">
+          <img
+            src="assets/images/pool1.jpg"
+            class="img-fluid rounded shadow"
+            alt="Басейн"
+            style="max-width: 100%; height: auto"
+          />
+        </div>
+        <div class="col-md-6">
+          <h3>Панорамен басейн</h3>
+          <p>
+            Отопляем вътрешен басейн с панорамен изглед към планината, джакузи и
+            открита тераса за пълноценен отдих под небето.
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="row mb-5 align-items-center flex-md-row-reverse"
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
+        <div class="col-md-6">
+          <img
+            src="assets/images/spa1.jpg"
+            class="img-fluid rounded shadow"
+            alt="Термална зона"
+            style="max-width: 100%; height: auto"
+          />
+        </div>
+        <div class="col-md-6">
+          <h3>Термална зона</h3>
+          <p>
+            Комбинация от финландска сауна, билкова био-сауна, парна баня и
+            солна стая. Идеално за детокс и отпускане.
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="row mb-5 align-items-center"
+        data-aos="fade-up"
+        data-aos-delay="300"
+      >
+        <div class="col-md-6">
+          <img
+            src="assets/images/massage2.jpg"
+            class="img-fluid rounded shadow"
+            alt="Масаж"
+            style="max-width: 100%; height: auto"
+          />
+        </div>
+        <div class="col-md-6">
+          <h3>Масажи и терапии</h3>
+          <p>
+            Насладете се на ръцете на професионални терапевти, които ще Ви
+            предложат персонализирани масажи и ритуали за здраве и красота.
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="row mb-5 align-items-center flex-md-row-reverse"
+        data-aos="fade-up"
+        data-aos-delay="400"
+      >
+        <div class="col-md-6">
+          <img
+            src="assets/images/fitnes1.jpg"
+            class="img-fluid rounded shadow"
+            alt="Фитнес"
+            style="max-width: 100%; height: auto"
+          />
+        </div>
+        <div class="col-md-6">
+          <h3>Фитнес зона</h3>
+          <p>
+            Напълно оборудвана зона с уреди от последно поколение за поддържане
+            на Вашата форма по време на престоя.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer
+      class="footer text-center"
+      style="background-color: #2f2e2c; color: #d3d3d3; padding: 20px 15px"
+    >
+      <div class="container">
+        <p style="margin: 0 0 8px; font-size: 16px">
+          Вино и СПА хотел Чукара &nbsp;&bull;&nbsp;
+          <a
+            href="mailto:reservations@chukara.bg"
+            style="color: #d3d3d3; text-decoration: none"
+            >reservations@chukara.bg</a
+          >
+          &nbsp;&bull;&nbsp; +359 897 404 404
+        </p>
+        <p style="margin: 0 0 12px; font-size: 14px; opacity: 0.7">
+          ул. „Хан Кубрат“ 12, гр. Трявна, България
+        </p>
+        <div>
+          <a
+            href="https://facebook.com/chukara.tryavna"
+            class="fa fa-facebook social-icon"
+            aria-label="Facebook"
+          ></a>
+          <a
+            href="https://instagram.com/chukara.tryavna"
+            class="fa fa-instagram social-icon"
+            aria-label="Instagram"
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="bg">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ресторант | Вино и СПА хотел Чукара</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Lora&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    <style>
+      .hero {
+        background-image: url("assets/images/hotel4.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 80vh;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark fixed-top"
+      style="
+        background: linear-gradient(to right, #3c423c, #2e342e);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      "
+    >
+      <div class="container">
+        <h1 id="H1NAV">Вино и СПА хотел Чукара</h1>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto fs-5">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Начало</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="hotel.html">Хотел</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="rooms.html">Стаи</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Reservations.html">Резервации</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link position-relative"
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#cartModal"
+              >
+                <i class="fa fa-shopping-cart"></i>
+                <span
+                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                  id="cart-count"
+                  >0</span
+                >
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero" data-aos="fade-in">
+      <h1>Ресторант</h1>
+    </section>
+
+    <div class="container py-5">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <h2>Изискана храна с изглед към планината</h2>
+        <p class="lead">
+          Ресторант Чукара комбинира местни кулинарни традиции с модерно гурме
+          преживяване. Всяко ястие е поднесено с внимание към детайла и вкусова
+          хармония.
+        </p>
+      </div>
+
+      <div
+        class="row mb-5 align-items-center restaurant-section"
+        data-aos="fade-up"
+        data-aos-delay="100"
+      >
+        <div class="col-md-6 text-center">
+          <img
+            src="assets/images/restaurant1.jpg"
+            class="img-fluid rounded shadow"
+            alt="Ресторант интериор"
+            style="max-width: 100%; height: auto"
+          />
+        </div>
+        <div class="col-md-6">
+          <h3>Топъл и уютен интериор</h3>
+          <p>
+            С дървени акценти, мека светлина и просторна тераса с изглед,
+            ресторантът е идеален за романтична вечеря, бизнес обяд или семейно
+            тържество.
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="row mb-5 align-items-center restaurant-section flex-md-row-reverse"
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
+        <div class="col-md-6 text-center">
+          <img
+            src="assets/images/food.jpg"
+            class="img-fluid rounded shadow"
+            alt="Гурме ястие"
+            style="max-width: 100%; height: auto"
+          />
+        </div>
+        <div class="col-md-6">
+          <h3>Гурме и традиции</h3>
+          <p>
+            Опитайте нашите специалитети – розбратено агне, домашен хляб, свежи
+            салати и десерти, съчетани с подбрани вина от собствената ни изба.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer text-center">
+      <div class="container">
+        <p>
+          Вино и СПА хотел Чукара &bull; +359 897 404 404 &bull;
+          <a href="mailto:reservations@chukara.bg">reservations@chukara.bg</a>
+        </p>
+        <p>
+          <a
+            href="https://facebook.com/chukara.tryavna"
+            class="fa fa-facebook"
+          ></a>
+          <a
+            href="https://instagram.com/chukara.tryavna"
+            class="fa fa-instagram"
+          ></a>
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

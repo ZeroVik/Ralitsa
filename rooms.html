@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Вино и СПА хотел Чукара</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Lora&display=swap" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <script src="assets/js/restrict_dates.js"></script>
+
+  <style>
+    .hero {
+      background-image: url('assets/images/hotel109.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 90vh;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background: linear-gradient(to right, #3c423c, #2e342e); box-shadow: 0 2px 5px rgba(0,0,0,0.3);">
+  <div class="container">
+        <h1 id="H1NAV">Вино и СПА хотел Чукара</h1>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto fs-5">
+        <li class="nav-item"><a class="nav-link" href="index.html">Начало</a></li>
+        <li class="nav-item"><a class="nav-link" href="hotel.html">Хотел</a></li>
+        <li class="nav-item"><a class="nav-link" href="rooms.html">Стаи</a></li>
+        <li class="nav-item"><a class="nav-link" href="Reservations.html">Резервации</a></li>
+        <li class="nav-item">
+  <a class="nav-link position-relative" href="#" data-bs-toggle="modal" data-bs-target="#cartModal">
+    <i class="fa fa-shopping-cart"></i>
+    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="cart-count">0</span>
+  </a>
+</li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <h1>Вино и СПА хотел Чукара</h1>
+</section>
+
+<div class="container py-5 section">
+  <div class="row g-4">
+
+    <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+      <div class="card position-relative overflow-hidden border-0 shadow-lg">
+        <img src="assets/images/room.jpg" alt="Делукс двойна стая" />
+        <div class="overlay">
+          <h5>Делукс двойна стая</h5>
+          <p>Гостоприемна атмосфера с естествени материали, топли тонове и пленяваща панорама. Идеална за двойки, търсещи комфорт и релакс.</p>
+<a href="Reservations.html?room=single" class="btn btn-outline-light mt-2">Резервирай</a>
+        </div>
+      </div>      
+      <div class="room-info">
+        <h3>Делукс двойна стая</h3>
+                            <ul style="font-size: 17px; color: #555; padding-left: 1.5rem; list-style-type: disc; margin-top: 0.75rem; line-height: 1.5;">
+      <li>Една спалня</li>
+      <li>1 голямо двойно легло</li>
+      <li>Вана</li>
+    </ul>
+      </div>
+    </div>
+
+    <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+      <div class="card position-relative overflow-hidden border-0 shadow-lg">
+        <img src="assets/images/room8.jpg" alt="Делукс двойна стая – Garden House" />
+        <div class="overlay">
+          <h5>Делукс двойна стая – Garden House</h5>
+          <p>Разположена в близост до градините, тази стая предлага спокойствие и естествена среда за отдих, с модерни удобства и уютен интериор.</p>
+<a href="Reservations.html?room=double" class="btn btn-outline-light mt-2">Резервирай</a>
+        </div>
+      </div>
+      <div class="room-info">
+        <h3>Делукс двойна стая – Garden House</h3>
+                    <ul style="font-size: 17px; color: #555; padding-left: 1.5rem; list-style-type: disc; margin-top: 0.75rem; line-height: 1.5;">
+      <li>Една спалня</li>
+      <li>2 единични легла</li>
+    </ul>
+      </div>
+    </div>
+
+    <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+      <div class="card position-relative overflow-hidden border-0 shadow-lg">
+        <img src="assets/images/room7.jpg" alt="Делукс едноспален апартамент" />
+        <div class="overlay">
+          <h5>Апартамент – Mountain View</h5>
+          <p>Просторен и стилен апартамент с отделна спалня, създаден за пълен комфорт и уют. Насладете се на зашеметяваща гледка към планината и модерни удобства.</p>
+<a href="Reservations.html?room=deluxe" class="btn btn-outline-light mt-2">Резервирай</a>
+        </div>
+      </div>
+      <div class="room-info">
+        <h3>Апартамент – Mountain View</h3>
+            <ul style="font-size: 17px; color: #555; padding-left: 1.5rem; list-style-type: disc; margin-top: 0.75rem; line-height: 1.5;">
+      <li>Една спалня + хол</li>
+      <li>1 голямо двойно легло + хол с единично легло + диван</li>
+      <li>Вана</li>
+    </ul>
+      </div>
+    </div>
+
+    <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+      <div class="card position-relative overflow-hidden border-0 shadow-lg">
+        <img src="assets/images/room6.jpg" alt="Стая с гледка към планината" />
+       <div class="overlay">
+  <h5>Делукс апартамент – Garden House</h5>
+  <p>Просторен и елегантен апартамент с две отделни спални, идеален за семейства или приятелски компании. Насладете се на директна гледка към басейна и тиха обстановка сред зеленината на градината.</p>
+<a href="Reservations.html?room=apartment" class="btn btn-outline-light mt-2">Резервирай</a>
+</div>
+</div>
+<div class="room-info">
+  <h3>Делукс апартамент – Garden House</h3>
+  <ul style="font-size: 17px; color: #555; padding-left: 1.5rem; list-style-type: disc; margin-top: 0.75rem; line-height: 1.5; ">
+    <li>Две отделни спални</li>
+    <li>2 големи двойни легла / 1 голямо двойно легло + 2 отделни</li>
+    <li>Вана</li>
+  </ul>
+</div>
+</div>
+    </div>
+    
+  </div>
+  
+<div class="container my-4" data-aos="fade-up" style="max-width: 600px; margin-left: auto; margin-right: auto; text-align: center;">
+  <h3 style="font-family: 'Cormorant Garamond', serif; font-weight: 700; font-size: 2rem; margin-bottom: 1rem;">
+    Общо оборудване и удобства във всички стаи
+  </h3>
+  <ul style="
+    font-size: 17px; 
+    color: #555; 
+    padding-left: 0; 
+    list-style-position: inside; 
+    line-height: 1.6; 
+    display: inline-block; 
+    text-align: left;
+    margin-left: auto; 
+    margin-right: auto;">
+    <li>Безплатен високоскоростен Wi-Fi</li>
+    <li>Оборудван мини бар</li>
+    <li>Плазмен телевизор с кабелни канали</li>
+    <li>Климатик с индивидуален контрол</li>
+    <li>Сейф за ценности</li>
+    <li>24-часово обслужване на стаите</li>
+  </ul>
+</div>
+
+</div>
+<div class="container py-5 section">
+  <h2 class="text-center mb-4" data-aos="fade-up">Галерия</h2>
+  <div class="row g-3">
+    <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+      <a href="assets/images/room7.jpg" class="glightbox" data-gallery="hotel-gallery">
+        <img src="assets/images/room7.jpg" class="img-fluid rounded shadow-sm" alt="Стая 1">
+      </a>
+    </div>
+    <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+      <a href="assets/images/room10.jpg" class="glightbox" data-gallery="hotel-gallery">
+        <img src="assets/images/room10.jpg" class="img-fluid rounded shadow-sm" alt="Стая 2">
+      </a>
+    </div>
+    <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
+      <a href="assets/images/roomg1.jpg" class="glightbox" data-gallery="hotel-gallery">
+        <img src="assets/images/roomg1.jpg" class="img-fluid rounded shadow-sm" alt="Стая 3">
+      </a>
+    </div>
+  </div>
+</div>
+<footer class="footer text-center" style="background-color: #2f2e2c; color: #d3d3d3; padding: 20px 15px; font-family: 'Lora', serif;">
+  <div class="container">
+    <p style="margin: 0 0 8px; font-size: 16px;">
+      Вино и СПА хотел Чукара &nbsp;&bull;&nbsp; 
+      <a href="mailto:reservations@chukara.bg" style="color: #d3d3d3; text-decoration: none;">reservations@chukara.bg</a> &nbsp;&bull;&nbsp; 
+      +359 897 404 404
+    </p>
+    <p style="margin: 0 0 12px; font-size: 14px; opacity: 0.7;">
+      ул. „Хан Кубрат“ 12, гр. Трявна, България
+    </p>
+    <div>
+      <a href="https://facebook.com/chukara.tryavna" class="fa fa-facebook social-icon" aria-label="Facebook"></a>
+      <a href="https://instagram.com/chukara.tryavna" class="fa fa-instagram social-icon" aria-label="Instagram"></a>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+<script>
+  const lightbox = GLightbox({ selector: '.glightbox' });
+</script>
+
+</body>
+</html>
